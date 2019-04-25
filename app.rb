@@ -15,5 +15,7 @@ class App < Sinatra::Base
     params.each do |key, value|
       @session[key] = value
     end
+
+    @session[:item]
   end
 end
